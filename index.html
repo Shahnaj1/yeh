@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>secret</title>
+    <link rel="stylesheet" href="prank1.css">
+  </head>
+  <body>
+      <div class="container">
+      <div class="box">
+      <div id="bx1" class="box1"> Hello, How are you </div>
+      <div   id="bx2" class="box2">You can answer by clicking the button given below.</div>
+          <button id="info" class="infobutton">CLICK ME</button>
+          <button id="btn1" class="butn1">CLICK HERE</button>
+          <button id="btn2" class="butn2">Plzz confirm it</button>
+        </div>  
+      </div>
+     <!-- <div class="animation-area">
+      <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+     </div> -->
+    <script>
+      
+      const b1 = document.querySelector('.box1');
+      const b2 = document.querySelector('.box2');
+      const ib = document.querySelector('.infobutton');
+      message1 = () =>{
+        prompt("Please write here your current situation");
+        b1.innerHTML="There is a secret for you.This is only for you so plzz don't share with anyone";
+      b2.innerHTML="Do you want to know the secret? If yes then click the below button";
+      ib.style.visibility ="hidden";
+      butn1.style.visibility = "visible";
+
+      }
+      ib.addEventListener('click',message1)
+      
+      const butn1 = document.querySelector('.butn1');
+
+      message2=()=>{
+       confirm (" Are you Shaane.If yes then confirm it ");
+       b1.innerHTML = "I want to go prom night with you 🥰🥰🥰";
+       b2.innerHTML="Do you want to go with me.";
+       butn1.style.visibility ="hidden";
+      butn2.style.visibility = "visible";
+      }
+      
+      butn1.addEventListener('click',message2) 
+
+      const butn2 = document.querySelector('.butn2');
+       message3=()=>{
+        alert("what are you thinking.Click on ok");
+        b1.innerHTML="Chup chap padhai karo 10 Nov se midsem hai,Fail hona hai kya ";
+        b2.innerHTML="I was just kidding tune serious le liya kya😅😅😅"
+        butn2.style.visibility ="hidden";
+       }
+       butn2.addEventListener('click',message3) 
+
+    </script>
+  </body>
+</html>
